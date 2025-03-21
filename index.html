@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel=apple-touch-icon-precomposed sizes=57x57 href=favico/apple-touch-icon-57x57.png>
+  <link rel=apple-touch-icon-precomposed sizes=114x114 href=favico/apple-touch-icon-114x114.png>
+  <link rel=apple-touch-icon-precomposed sizes=72x72 href=favico/apple-touch-icon-72x72.png>
+  <link rel=apple-touch-icon-precomposed sizes=144x144 href=favico/apple-touch-icon-144x144.png>
+  <link rel=apple-touch-icon-precomposed sizes=60x60 href=favico/apple-touch-icon-60x60.png>
+  <link rel=apple-touch-icon-precomposed sizes=120x120 href=favico/apple-touch-icon-120x120.png>
+  <link rel=apple-touch-icon-precomposed sizes=76x76 href=favico/apple-touch-icon-76x76.png>
+  <link rel=apple-touch-icon-precomposed sizes=152x152 href=favico/apple-touch-icon-152x152.png>
+  <link rel=icon type=image/png href=favico/favicon-196x196.png sizes=196x196>
+  <link rel=icon type=image/png href=favico/favicon-96x96.png sizes=96x96>
+  <link rel=icon type=image/png href=favico/favicon-32x32.png sizes=32x32>
+  <link rel=icon type=image/png href=favico/favicon-16x16.png sizes=16x16>
+  <link rel=icon type=image/png href=favico/favicon-128.png sizes=128x128>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="pobo">
+  <meta property="og:description"
+    content="Zap up pobo, the dumbest electric Pokémon on the blockchain! Grab $pobo or train this goofy dud for a shocking PP (pobo Power). A wild, silly meme quest ready to short-circuit the moon. Join the pobo chaos now!">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="750">
+  <meta property="og:image:height" content="250">
+  <meta property="og:image" content="Hamster_IP/banner/hamster_banner_4.png">
+  <meta property="og:url" content="index.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:title" content="pobo">
+  <meta name="twitter:description"
+    content="Zap up pobo, the dumbest electric Pokémon on the blockchain! Grab $pobo or train this goofy dud for a shocking PP (pobo Power). A wild, silly meme quest ready to short-circuit the moon. Join the pobo chaos now!">
+  <meta name="twitter:image:type" content="image/png">
+  <meta name="twitter:image" content="Hamster_IP/banner/hamster_banner_4.png">
+  <meta name="description"
+    content="Zap up pobo, the dumbest electric Pokémon on the blockchain! Grab $pobo or train this goofy dud for a shocking PP (pobo Power). A wild, silly meme quest ready to short-circuit the moon. Join the pobo chaos now!">
+  <title>pobo</title>
+  <link rel="icon" type="image/png" href="Hamster_IP/PFP/Hamster_PFP-1.png" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="DoodleCSS-main/doodle.css" />
+  <script src="https://terminal.jup.ag/main-v4.js"></script>
+</head>
+
+<body onload="randomizePFP()">
+  <header>
+    <nav>
+      <a class="logo" href="#hero">$pobo</a>
+      <div class="ca" onclick="copyToClipboard()">
+        <div class="ca-heading">
+          <img src="copy.png" alt="" />
+          <p>CA</p>
+        </div>
+        <p class="ca-data"></p>
+        <span class="tooltip" id="tooltip">Coin address copied</span>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+      </div>
+      <ol class="socials-list">
+        <li class="socials-item">
+          <a target="_blank" href="https://dexscreener.com/solana/"><img
+              src="Hamster_IP/Social%20icons/Social-icons_dex.png" alt="" /></a>
+        </li>
+        <li class="socials-item">
+          <a target="_blank" href="https://t.me/PoboThePanda/"><img src="Hamster_IP/Social%20icons/Social-icons_telegram.png"
+              alt="" /></a>
+        </li>
+        <li class="socials-item">
+          <a target="_blank" href="https://x.com/PoboThePanda"><img src="Hamster_IP/Social%20icons/Social-icons_x.png"
+              alt="" /></a>
+        </li>
+      </ol>
+    </nav>
+  </header>
+  <div id="splash-screen">
+    <img id="splash-img" src="Hamster_IP/splash/splash-anim.png" alt="Loading" />
+    <button id="enter-site" class="hero-btn doodle-border" 
+        onmouseover="changeSplashImage()" 
+        onmouseout="resetSplashImage()"> TAP TO SHOOT ARROW 
+    </button>
+</div>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero_heading">
+        <div class="hero_heading_title">
+          <h1>$pobo</h1>
+          <p class="fun-quote" id="random-phrase"></p>
+        </div>
+        <p> I'm just a dumb pobo! Watch out for the cat he keeps trying to eat me! </p>
+      </div>
+      <img id="poki-image" class="hero_poki" src="Hamster_IP\Gallery\puki_36.png" alt="" />
+      <a id="main-cta" class="hero-btn doodle-border" onmouseover="changePokiImage()" onmouseout="resetPokiImage()"
+        target="_blank" href="https://jup.ag/swap/"> Get som $pobo
+      </a>
+      <img class="hero_anvil" src="" role="presentation" alt="" />
+    </section>
+    <section class="marquee">
+      <div data-marquee-duplicate="2" data-marquee-scroll-direction-target="" data-marquee-direction="right"
+        data-marquee-status="normal" data-marquee-speed="15" data-marquee-scroll-speed="10" class="marquee-advanced">
+        <div data-marquee-scroll-target="" class="marquee-advanced__scroll">
+          <div data-marquee-collection-target="" class="marquee-advanced__collection">
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_1.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_2.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_3.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_4.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_5.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_6.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_7.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_8.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_9.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_10.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_11.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_12.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_13.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_14.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_15.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-marquee-duplicate="2" data-marquee-scroll-direction-target="" data-marquee-direction="left"
+        data-marquee-status="normal" data-marquee-speed="15" data-marquee-scroll-speed="10" class="marquee-advanced">
+        <div data-marquee-scroll-target="" class="marquee-advanced__scroll">
+          <div data-marquee-collection-target="" class="marquee-advanced__collection">
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_16.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_17.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_18.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_19.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_20.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_21.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_22.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_23.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_24.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_25.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_26.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_27.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_28.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_29.png" alt="" />
+            </div>
+            <div class="marquee-advanced__item-width doodle-border">
+              <img src="Hamster_IP/Gallery/puki_30.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exchanges">
+      <div class="exchanges_content">
+        <div class="exchanges_heading">
+          <h2>Snag some $pobo</h2>
+          <p>$pobo will soon be available on</p>
+        </div>
+        <ul class="exchanges_list">
+          <li>
+            <a class="exchanges_item doodle-border" href="#"><img src="#" alt="" />Coinmarketcap</a>
+          </li>
+          <li>
+            <a class="exchanges_item doodle-border" href="#"><img src="#" alt="" />Coingecko</a>
+          </li>
+          <li>
+            <a class="exchanges_item doodle-border" href="https://dexscreener.com/solana/"><img src="#"
+                alt="" />Dexscreener</a>
+          </li>
+          <li>
+            <a class="exchanges_item doodle-border" href="#"><img src="#" alt="" />Birdeye</a>
+          </li>
+          <li>
+            <a class="exchanges_item doodle-border" href="#"><img src="#" alt="" />Moonshot</a>
+          </li>
+          <li>
+            <a class="exchanges_item doodle-border" href="#"><img src="#" alt="" />Dextools</a>
+          </li>
+          <li>
+            <a class="exchanges_item doodle-border"
+              href="https://jup.ag/swap/SOL-26HAAVVaqYnWhFaT987rVqjpAp7tU7WwMFaC2Z784eEb"><img src="#"
+                alt="" />Jupiter</a>
+          </li>
+          <li>
+            <a class="exchanges_item doodle-border" href="#"><img src="#" alt="" />Solscan</a>
+          </li>
+        </ul>
+      </div>
+      <div class="exchanges_terminal">
+        <img class="exchanges_terminal-img" src="Hamster_IP/Jupiter_Swap/Hamster_jupiter-swap_1.webp" alt="" />
+        <div class="" id="integrated-terminal" style="width: 400px; height: 568px;"></div>
+      </div>
+      <img class="phantom" src="Hamster_IP/Jupiter_Swap/Phantom-icon.png" alt="" />
+    </section>
+    <section id="pfp_generator" class="pfp_generator">
+      <div class="pfp_generator_heading">
+       
+  </main>
+  <footer>
+    <p> $pobo is a coin with no real value. $pobo is just a goofy electric Pokémon here for laughs and shocks, not for
+      profit. $pobo won’t evolve into riches, so don’t expect gains from zapping it. By snagging $pobo, you agree you’ve
+      read this Pokédex entry! </p>
+    <p> ©<span data-current-year="">20??</span> pobo and all related logos, characters, names, and quirky
+      electric-Pokémon traits are exclusive property of pobo. All Rights Reserved. </p>
+    <div class="falling-anvil">
+
+    </div>
+  </footer>
+  <img id="custom-cursor" src="#" alt="Custom Cursor" />
+  <!-- CDN Terbaru untuk Lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <!-- CDN Terbaru untuk GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- CDN Terbaru untuk ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    const lenis = new Lenis({
+      lerp: 0.05,
+      wheelMultiplier: 1,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.Jupiter) {
+        window.Jupiter.init({
+          displayMode: "integrated",
+          integratedTargetId: "integrated-terminal",
+          endpoint: "https://api.mainnet-beta.solana.com",
+          defaultExplorer: "Solscan",
+          formProps: {
+            initialOutputMint: "",
+          }
+        });
+      } else {
+        console.error("Jupiter Terminal did not load correctly.");
+      }
+    });
+
+    document.getElementById("main-cta").addEventListener("click", function () {
+      gtag('event', 'click_bouton', {
+        'event_category': 'Conversion',
+        'event_label': 'Main CTA'
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
