@@ -60,22 +60,22 @@ function toggleMenu() {
 document.addEventListener("DOMContentLoaded", () => {
 	const phrases = [
 	"I’m small, but my panic speed is unmatched!",
-		"Why do cats always think I’m a snack?!",
+		"Why do gators always think I’m a snack?!",
 		"I may be tiny, but I got turbo mode when chased!",
 		"Help! My legs are short, but the fear is real!",
 		"I swear, I wasn’t made for this game of tag!",
-		"Can’t a little guy just vibe without a cat ambush?",
+		"Can’t a little guy just vibe without a gator ambush?",
 		"One minute I’m chilling, next minute I’m in a chase scene!",
 		"I’m not food! I’m fluff with feelings!",
-		"I wish I was big... actually, no, just wish that cat was smaller!",
+		"I wish I was big... actually, no, just wish that gator was smaller!",
 		"Why run when I can just squeak for help?",
 		"This is NOT what I meant by cardio!",
-		"If I climb high enough, the cat won’t get me... right?",
+		"If I climb high enough, the gator won’t get me... right?",
 		"My survival skill? Maximum squeak frequency!",
 		"I need a power-up... or a hiding spot!",
 		"Paws off, I’m not your chew toy!",
 		"I was born small, not for speed!",
-		"If I stop moving, maybe the cat will think I’m a rock...",
+		"If I stop moving, maybe the gator will think I’m a rock...",
 		"I demand a rematch... when I grow bigger!"
 	];
 
@@ -102,13 +102,13 @@ function initMarqueeScrollDirection() {
 			const {
 				marqueeSpeed: speed,
 				marqueeDirection: direction,
-				marqueeDuplicate: duplicate,
+				marqueeDupligatore: dupligatore,
 				marqueeScrollSpeed: scrollSpeed,
 			} = marquee.dataset; // Mengambil atribut data dari elemen
 
 			const marqueeSpeedAttr = parseFloat(speed); // Mengubah kecepatan ke tipe float
 			const marqueeDirectionAttr = direction === "right" ? 1 : -1; // Menentukan arah (1 untuk kanan, -1 untuk kiri)
-			const duplicateAmount = parseInt(duplicate || 0); // Jumlah duplikat konten
+			const dupligatoreAmount = parseInt(dupligatore || 0); // Jumlah duplikat konten
 			const scrollSpeedAttr = parseFloat(scrollSpeed); // Kecepatan gulir tambahan
 			const speedMultiplier =
 				window.innerWidth < 479 ? 0.25 : window.innerWidth < 991 ? 0.5 : 1; // Pengali kecepatan berdasarkan lebar layar
@@ -121,10 +121,10 @@ function initMarqueeScrollDirection() {
 			marqueeScroll.style.marginLeft = `${scrollSpeedAttr * -1}%`; // Mengatur margin kiri untuk efek gulir
 			marqueeScroll.style.width = `${scrollSpeedAttr * 2 + 100}%`; // Mengatur lebar kontainer gulir
 
-			if (duplicateAmount > 0) {
+			if (dupligatoreAmount > 0) {
 				// Jika ada duplikat yang diminta
 				const fragment = document.createDocumentFragment();
-				for (let i = 0; i < duplicateAmount; i++) {
+				for (let i = 0; i < dupligatoreAmount; i++) {
 					fragment.appendChild(marqueeContent.cloneNode(true)); // Menduplikasi konten marquee
 				}
 				marqueeScroll.appendChild(fragment); // Menambahkan duplikat ke kontainer
@@ -507,7 +507,7 @@ function downloadPFP() {
 			});
 			finalizeDownload(); // Memulai proses pengunduhan
 		})
-		.catch((err) => {
+		.gatorch((err) => {
 			console.error("Kesalahan saat memuat gambar:", err); // Menampilkan kesalahan jika ada
 		});
 }
