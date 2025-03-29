@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Alamat Koin (Coin Address)
 // Bagian ini mengatur fungsi untuk menyalin alamat koin ke clipboard dan menampilkan tooltip.
 function copyToClipboard() {
-	const text = "ComingSoon"; // Alamat koin yang akan disalin
+	const text = "6DPir6seFE4ZxZTFa96tjLUosWTfGu4Cagc19JdMpump"; // Alamat koin yang akan disalin
 	navigator.clipboard.writeText(text).then(() => {
 		// Menyalin teks ke clipboard
 		const tooltip = document.getElementById("tooltip");
