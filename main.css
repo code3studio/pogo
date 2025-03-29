@@ -45,7 +45,7 @@ nav {
 	display: flex;
 	align-items: center;
 	border-bottom: 5px solid black;
-	background-color: white;
+	background-color: #ffffff;
 	height: 90px;
 	z-index: 1000;
 }

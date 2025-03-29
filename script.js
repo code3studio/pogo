@@ -59,24 +59,24 @@ function toggleMenu() {
 // Bagian ini menampilkan frasa acak di halaman saat halaman dimuat.
 document.addEventListener("DOMContentLoaded", () => {
 	const phrases = [
-	"I’m small, but my panic speed is unmatched!",
-		"Why do gators always think I’m a snack?!",
-		"I may be tiny, but I got turbo mode when chased!",
-		"Help! My legs are short, but the fear is real!",
-		"I swear, I wasn’t made for this game of tag!",
-		"Can’t a little guy just vibe without a gator ambush?",
-		"One minute I’m chilling, next minute I’m in a chase scene!",
-		"I’m not food! I’m fluff with feelings!",
-		"I wish I was big... actually, no, just wish that gator was smaller!",
-		"Why run when I can just squeak for help?",
-		"This is NOT what I meant by cardio!",
-		"If I climb high enough, the gator won’t get me... right?",
-		"My survival skill? Maximum squeak frequency!",
-		"I need a power-up... or a hiding spot!",
-		"Paws off, I’m not your chew toy!",
-		"I was born small, not for speed!",
-		"If I stop moving, maybe the gator will think I’m a rock...",
-		"I demand a rematch... when I grow bigger!"
+		"I’m not slow, I’m just calculating each step... very thoroughly!",
+		"Why does everyone assume I’m lost? I’m just pacing myself!",
+		"I may be slow, but at least I don’t miss the scenery!",
+		"Help! I flipped over and now I live here!",
+		"I swear I was fast in a past life... probably a squirrel.",
+		"Can’t a turtle enjoy life without a pigeon trying to ride me?",
+		"One minute I’m crossing the road, next minute it’s sunset!",
+		"I’m not lazy, I’m aerodynamic... for naps.",
+		"I wish I was faster... actually, no, I’d still nap halfway.",
+		"Why run when I’ve got a built-in home to hide in?",
+		"This is NOT a race, it’s a lifestyle!",
+		"If I hide in my shell, maybe the world will chill out for a bit.",
+		"My defense skill? Extreme hide mode activated!",
+		"I need a snack... but it’s on the other side of the room...",
+		"Paws off! I’m a limited-edition tortoise, not a stepping stone!",
+		"I was born with a shell, not speed boots!",
+		"If I stop moving, maybe no one will ask me to do stuff.",
+		"I demand a rematch... just give me a 3-day head start!"
 	];
 
 	const randomIndex = Math.floor(Math.random() * phrases.length); // Memilih indeks acak dari daftar frasa
